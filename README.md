@@ -18,6 +18,6 @@ Simple clone this repo and run `yarn` to install.
 On the left side you see content wrapped by `<BackgroundImage />` from `gatsby-background-image`,
 on the right (for comparison) a pure `gatsby-image`. 
 
-Feel free to play around with the `BackgroundSection` in [src/components/index.js](components/index.js).
+Feel free to play around with the `BackgroundSection` in [src/components/index.js](src/components/index.js).
 
 #### Hav Phun : )!
