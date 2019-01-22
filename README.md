@@ -20,4 +20,7 @@ on the right (for comparison) a pure `gatsby-image`.
 
 Feel free to play around with the `BackgroundSection` in [src/components/index.js](src/components/index.js).
 
+There are also included examples on how to target the pseudo-elements in 
+the mentioned file as well as at the end of the CSS-file [src/components/layout.css](src/components/layout.css). 
+
 #### Hav Phun : )!

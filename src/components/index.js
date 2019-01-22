@@ -29,6 +29,7 @@ const BackgroundSection = ({ className, children }) => (
                               className={className}
                               fluid={imageData}
                               backgroundColor={`#040e18`}
+                              classId="gbi"
              >
                {children}
              </BackgroundImage>
@@ -48,19 +49,17 @@ const StyledWelcomeImage = styled(Img)`
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 50%;
   background-repeat: repeat-y;
-  
-  // ${media.lessThan("large")`
-  //   background-size: contain !important;
-  //   &:after, &:before {
-  //     background-size: contain !important;
-  //   }
-  // `}
 `
 
 const StyledWrapper = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+
+  // This is an example how to target the pseudo-elements:  
+  //.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {
+  //  background-position: top right;
+  //}
 `
 
 export default StyledBackgroundSection
