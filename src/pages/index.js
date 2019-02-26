@@ -11,7 +11,8 @@ const IndexPage = () => (
     <SEO title="gatsby-background-image test" keywords={[`gatsby`, `application`, `react`]} />
     <h1>Hi people</h1>
     <p>Welcome to the <code>gatsby-background-image</code> test site.</p>
-    <p>Now go build something great.</p>
+    <p>Below, you see an image rendered by <code>gatsby-background-image</code></p>
+    <p>To the right, the same image rendered by <code>gatsby-image</code></p>
     <div style={{ maxWidth: `300px`, margin: `0 auto`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

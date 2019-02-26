@@ -14,7 +14,7 @@ const BackgroundSection = ({ className, children }) => (
         desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
@@ -25,6 +25,7 @@ const BackgroundSection = ({ className, children }) => (
        const imageData = data.desktop.childImageSharp.fluid
        return (
            <StyledWrapper>
+             <StyledSymetryWrapper>
              <BackgroundImage Tag="section"
                               className={className}
                               fluid={imageData}
@@ -33,7 +34,10 @@ const BackgroundSection = ({ className, children }) => (
              >
                {children}
              </BackgroundImage>
-             <StyledWelcomeImage fluid={imageData} />
+             </StyledSymetryWrapper>
+             <StyledSymetryWrapper>
+              <StyledWelcomeImage fluid={imageData} />
+             </StyledSymetryWrapper>
            </StyledWrapper>
        )
      }
@@ -41,13 +45,19 @@ const BackgroundSection = ({ className, children }) => (
     />
 )
 
+const StyledSymetryWrapper = styled.div`
+  width: 50vw;
+  height: 100%;
+  overflow: hidden;
+`
+
 const StyledWelcomeImage = styled(Img)`
-  width: 50%;
+  width: 100vw;
   height: auto;
 `
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-  width: 50%;
+  width: 100vw;
   background-repeat: repeat-y;
   
   // With media-queries you sadly still have to use !important, for the moment.

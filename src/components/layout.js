@@ -22,18 +22,17 @@ const Layout = ({ children }) => (
           height: `100vh`,
           width: `100%`,
           display: `flex`,
-          placeContent: `center`
+          placeContent: `start`,
         }}>
           <div
             style={{
               placeSelf: `center`,
               textAlign: `center`,
               color: `#ccc`,
-              // margin: `0 auto`,
               height: `50vh`,
               maxWidth: 960,
               padding: `0px 1.0875rem 1.45rem`,
-              paddingTop: 0,
+              marginTop: `-5rem`,
             }}
           >
             {children}
@@ -41,6 +40,10 @@ const Layout = ({ children }) => (
               © {new Date().getFullYear()}, Built with
               {` `}
               <a href="https://www.gatsbyjs.org">Gatsby</a>
+              {` & `}
+              <a href="https://github.com/timhagn/gatsby-background-image">
+                gatsby-background-image
+              </a>
             </footer>
           </div>
         </div>
