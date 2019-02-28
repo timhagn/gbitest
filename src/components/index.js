@@ -26,14 +26,14 @@ const BackgroundSection = ({ className, children }) => (
        return (
            <StyledWrapper>
              <StyledSymetryWrapper>
-             <BackgroundImage Tag="section"
-                              className={className}
-                              fluid={imageData}
-                              backgroundColor={`#040e18`}
-                              classId="gbi"
-             >
-               {children}
-             </BackgroundImage>
+               <BackgroundImage Tag="section"
+                                className={className}
+                                fluid={imageData}
+                                backgroundColor={`#040e18`}
+                                classId="gbi"
+               >
+                 {children}
+               </BackgroundImage>
              </StyledSymetryWrapper>
              <StyledSymetryWrapper>
               <StyledWelcomeImage fluid={imageData} />
