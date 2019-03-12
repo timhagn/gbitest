@@ -8,6 +8,30 @@ import { generateMedia } from 'styled-media-query'
 
 const media = generateMedia();
 
+
+/**
+ * Transitory possibility for switching to WebP.
+ *
+ * @param imageData   Default imageData (fluid / fixed) from GraphQL query.
+ * @return {Object}   Switched source properties to WebP.
+ */
+/*eslint-disable */
+const switchToWebP = imageData => {
+  let convertedImageData = { ...imageData }
+
+  if (convertedImageData.src && convertedImageData.srcWebp) {
+    convertedImageData.srcDefault = convertedImageData.src
+    convertedImageData.src = convertedImageData.srcWebp
+  }
+  if (convertedImageData.srcSet && convertedImageData.srcSetWebp) {
+    convertedImageData.srcSetDefault = convertedImageData.srcSet
+    convertedImageData.srcSet = convertedImageData.srcSetWebp
+  }
+
+  return convertedImageData
+}
+/*eslint-enable */
+
 const BackgroundSection = ({ className, children }) => (
     <StaticQuery query={graphql`
       query {
@@ -21,8 +45,10 @@ const BackgroundSection = ({ className, children }) => (
       }
     `}
      render={data => {
-       // Set ImageData.
+       // Extract imageData (default).
        const imageData = data.desktop.childImageSharp.fluid
+       // Until v0.2.5 is published, temporary possibility to switch to WebP.
+       // const imageData = switchToWebP(data.desktop.childImageSharp.fluid)
        return (
            <StyledWrapper>
              <StyledSymetryWrapper>
