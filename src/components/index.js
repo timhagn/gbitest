@@ -10,7 +10,8 @@ const media = generateMedia();
 
 
 /**
- * Transitory possibility for switching to WebP.
+ * WAS: Transitory possibility for switching to WebP.
+ * Should no longer be necessary from gatsby-background-image v0.2.5 onward!
  *
  * @param imageData   Default imageData (fluid / fixed) from GraphQL query.
  * @return {Object}   Switched source properties to WebP.
@@ -47,7 +48,7 @@ const BackgroundSection = ({ className, children }) => (
      render={data => {
        // Extract imageData (default).
        const imageData = data.desktop.childImageSharp.fluid
-       // Until v0.2.5 is published, temporary possibility to switch to WebP.
+       // Until v0.2.5 was published, temporary possibility to switch to WebP.
        // const imageData = switchToWebP(data.desktop.childImageSharp.fluid)
        return (
            <StyledWrapper>
