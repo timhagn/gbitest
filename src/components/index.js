@@ -39,7 +39,7 @@ const BackgroundSection = ({ className, children }) => (
         desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
@@ -56,8 +56,9 @@ const BackgroundSection = ({ className, children }) => (
                <BackgroundImage Tag="section"
                                 className={className}
                                 fluid={imageData}
-                                // backgroundColor={`#040e18`}
+                                backgroundColor={`#040e18`}
                                 classId="gbi"
+                                critical
                >
                  {children}
                </BackgroundImage>
