@@ -96,6 +96,10 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   //     background-size: contain !important;
   //   }
   // `}
+  // Soon to come: direct styling of pseudo-Elements : )
+  //&:after, &:before {
+  //   background-position: center;
+  //}
 `
 
 const StyledWrapper = styled.div`
