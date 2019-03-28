@@ -15,6 +15,8 @@ const media = generateMedia();
  *
  * @param imageData   Default imageData (fluid / fixed) from GraphQL query.
  * @return {Object}   Switched source properties to WebP.
+ *
+ * @deprecated
  */
 /*eslint-disable */
 const switchToWebP = imageData => {
@@ -58,14 +60,14 @@ const BackgroundSection = ({ className, children }) => (
                                 fluid={imageData}
                                 backgroundColor={`#040e18`}
                                 classId="gbi"
-                                critical
                >
                  {children}
                </BackgroundImage>
              </StyledSymetryWrapper>
              <StyledSymetryWrapper>
-              <StyledWelcomeImage fluid={imageData} />
-                                   {/*backgroundColor={`#040e18`} />*/}
+               <StyledWelcomeImage fluid={imageData}
+                                   backgroundColor="#040e18"
+               />
              </StyledSymetryWrapper>
            </StyledWrapper>
        )
