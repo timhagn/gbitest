@@ -6,8 +6,7 @@ import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
 import { generateMedia } from 'styled-media-query'
 
-const media = generateMedia();
-
+const media = generateMedia()
 
 /**
  * WAS: Transitory possibility for switching to WebP.
@@ -36,7 +35,8 @@ const switchToWebP = imageData => {
 /*eslint-enable */
 
 const BackgroundSection = ({ className, children }) => (
-    <StaticQuery query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
         desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
           childImageSharp {
@@ -47,33 +47,31 @@ const BackgroundSection = ({ className, children }) => (
         }
       }
     `}
-     render={data => {
-       // Extract imageData (default).
-       const imageData = data.desktop.childImageSharp.fluid
-       // Until v0.2.5 was published, temporary possibility to switch to WebP.
-       // const imageData = switchToWebP(data.desktop.childImageSharp.fluid)
-       return (
-           <StyledWrapper>
-             <StyledSymetryWrapper>
-               <BackgroundImage Tag="section"
-                                className={className}
-                                fluid={imageData}
-                                backgroundColor={`#040e18`}
-                                classId="gbi"
-               >
-                 {children}
-               </BackgroundImage>
-             </StyledSymetryWrapper>
-             <StyledSymetryWrapper>
-               <StyledWelcomeImage fluid={imageData}
-                                   backgroundColor="#040e18"
-               />
-             </StyledSymetryWrapper>
-           </StyledWrapper>
-       )
-     }
-     }
-    />
+    render={data => {
+      // Extract imageData (default).
+      const imageData = data.desktop.childImageSharp.fluid
+      // Until v0.2.5 was published, temporary possibility to switch to WebP.
+      // const imageData = switchToWebP(data.desktop.childImageSharp.fluid)
+      return (
+        <StyledWrapper>
+          <StyledSymetryWrapper>
+            <BackgroundImage
+              Tag="section"
+              className={className}
+              fluid={imageData}
+              backgroundColor={`#040e18`}
+              classId="gbi"
+            >
+              {children}
+            </BackgroundImage>
+          </StyledSymetryWrapper>
+          <StyledSymetryWrapper>
+            <StyledWelcomeImage fluid={imageData} backgroundColor="#040e18" />
+          </StyledSymetryWrapper>
+        </StyledWrapper>
+      )
+    }}
+  />
 )
 
 const StyledSymetryWrapper = styled.div`
@@ -97,7 +95,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   //background-size: cover;
   
   // With media-queries you sadly still have to use !important, for the moment.
-  // ${media.lessThan("large")`
+  // ${media.lessThan('large')`
   //   background-size: contain !important;
   //   &:after, &:before {
   //     background-size: contain !important;
@@ -116,7 +114,7 @@ const StyledWrapper = styled.div`
   height: 100vh;
   display: flex;
 
-  // This is an example how to target the pseudo-elements:  
+  // This is an example how to target the pseudo-elements:
   //.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {
   //  background-clip: content-box;
   //}

@@ -10,7 +10,9 @@ const SecondPage = () => (
     <SEO title="Page two" />
     <h1>Hi from the second page</h1>
     <p>Same comparison as on Page 1.</p>
-    <div style={{ maxWidth: `300px`, margin: `0 auto`, marginBottom: `1.45rem` }}>
+    <div
+      style={{ maxWidth: `300px`, margin: `0 auto`, marginBottom: `1.45rem` }}
+    >
       <Image />
     </div>
     <Link to="/">Go back to the homepage</Link>

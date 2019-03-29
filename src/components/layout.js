@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
-import StyledBackgroundSection from "./index";
+import StyledBackgroundSection from './index'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,12 +18,14 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <StyledBackgroundSection>
-        <div style={{
-          height: `100vh`,
-          width: `100%`,
-          display: `flex`,
-          placeContent: `start`,
-        }}>
+        <div
+          style={{
+            height: `100vh`,
+            width: `100%`,
+            display: `flex`,
+            placeContent: `start`,
+          }}
+        >
           <div
             style={{
               placeSelf: `center`,
