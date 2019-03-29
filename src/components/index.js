@@ -89,6 +89,7 @@ const StyledWelcomeImage = styled(Img)`
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100vw;
+  
   // These three crucial styles (if existing) are directly parsed and added to 
   // the pseudo-elements without further ado.
   //background-repeat: repeat-y;
@@ -102,6 +103,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   //     background-size: contain !important;
   //   }
   // `}
+  
   // Should we be able to apply direct styling of pseudo-Elements (without !important)?
   // See: https://github.com/timhagn/gatsby-background-image/issues/20  
   //&:after, &:before {
