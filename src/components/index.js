@@ -89,7 +89,11 @@ const StyledWelcomeImage = styled(Img)`
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100vw;
-  background-repeat: repeat-y;
+  // These three crucial styles (if existing) are directly parsed and added to 
+  // the pseudo-elements without further ado.
+  //background-repeat: repeat-y;
+  //background-position: bottom center;
+  //background-size: cover;
   
   // With media-queries you sadly still have to use !important, for the moment.
   // ${media.lessThan("large")`
@@ -98,9 +102,10 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   //     background-size: contain !important;
   //   }
   // `}
-  // Soon to come: direct styling of pseudo-Elements : )
+  // Should we be able to apply direct styling of pseudo-Elements (without !important)?
+  // See: https://github.com/timhagn/gatsby-background-image/issues/20  
   //&:after, &:before {
-  //   background-position: center;
+  //   background-clip: content-box;
   //}
 `
 
@@ -111,7 +116,7 @@ const StyledWrapper = styled.div`
 
   // This is an example how to target the pseudo-elements:  
   //.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {
-  //  background-position: top right;
+  //  background-clip: content-box;
   //}
 `
 
