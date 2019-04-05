@@ -25,6 +25,11 @@ the mentioned file as well as at the end of the CSS-file [src/components/layout.
 
 ## Contributing to `gatsby-background-image` with this repository
 
+To read a little more about Contributing to `gatsby-background-image`, see
+the [CONTRIBUTING](https://github.com/timhagn/gatsby-background-image/blob/master/CONTRIBUTING.md) 
+file over there : )!
+If that's TL;DR, just start with the following:
+
 Fork [`gatsby-background-image`](https://github.com/timhagn/gatsby-background-image), 
 clone your fork of it to it's own folder and execute either `yarn link` or `npm link` 
 in there.
@@ -35,5 +40,7 @@ Then change back to your `gbitest` folder and execute
 Now you only have to change the line `import BackgroundImage from 'gatsby-background-image'`
 to `import BackgroundImage from 'gatsby-background-image/src'` in 
 [src/components/index.js](src/components/index.js) and you are good to go!
+
+ 
 
 #### Hav Phun : )!
