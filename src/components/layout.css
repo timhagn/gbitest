@@ -625,7 +625,17 @@ pre tt:after {
   }
 }
 
-/*This is an example how to target the pseudo-elements:*/
+/*This is an example of how to target the pseudo-elements via the classId prop:*/
 /*.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {*/
   /*background-position: top right;*/
+/*}*/
+
+/*These are examples of how to target pseudo-elements by className, but you
+  have to overwrite */
+/*.test {*/
+/*  background-size: contain;*/
+/*}*/
+
+/*.test:after, .test:before {*/
+/*  background-position: top right;*/
 /*}*/

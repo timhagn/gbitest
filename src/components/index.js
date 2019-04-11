@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from 'gatsby-background-image/src'
 import { generateMedia } from 'styled-media-query'
 
 const media = generateMedia()
@@ -58,9 +58,18 @@ const BackgroundSection = ({ className, children }) => (
             <BackgroundImage
               Tag="section"
               className={className}
+              // To style via external CSS see layout.css last examples:
+              // className="test"
               fluid={imageData}
               backgroundColor={`#040e18`}
-              classId="gbi"
+              // You are able to set a classId and style by wrapper (see below):
+              // classId="gbi"
+              style={{
+                // Defaults are overwrite-able by setting one of the following:
+                // backgroundSize: '',
+                // backgroundPosition: '',
+                // backgroundRepeat: '',
+              }}
             >
               {children}
             </BackgroundImage>
@@ -89,23 +98,24 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100vw;
   
   // These three crucial styles (if existing) are directly parsed and added to 
-  // the pseudo-elements without further ado.
+  // the pseudo-elements without further ado (except when overwritten).
   //background-repeat: repeat-y;
-  //background-position: bottom center;
-  //background-size: cover;
+  //background-position: left center;
+  //background-size: contain;
   
-  // With media-queries you sadly still have to use !important, for the moment.
+  // With media-queries you have to overwrite the default options (see style={{}} above).
   // ${media.lessThan('large')`
-  //   background-size: contain !important;
+  //   background-size: cover;
   //   &:after, &:before {
-  //     background-size: contain !important;
+  //     background-size: contain;
   //   }
   // `}
   
-  // Should we be able to apply direct styling of pseudo-Elements (without !important)?
+  // For pseudo-elements you have to overwrite the default options (see style={{}} above).
   // See: https://github.com/timhagn/gatsby-background-image/issues/20  
   //&:after, &:before {
   //   background-clip: content-box;
+  //   //background-size: cover;
   //}
 `
 
@@ -114,7 +124,7 @@ const StyledWrapper = styled.div`
   height: 100vh;
   display: flex;
 
-  // This is an example how to target the pseudo-elements:
+  // This is an example how to target the pseudo-elements via classId:
   //.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {
   //  background-clip: content-box;
   //}
