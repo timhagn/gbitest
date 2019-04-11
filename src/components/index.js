@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import BackgroundImage from 'gatsby-background-image/src'
+import BackgroundImage from 'gatsby-background-image'
 import { generateMedia } from 'styled-media-query'
 
 const media = generateMedia()
@@ -64,12 +64,12 @@ const BackgroundSection = ({ className, children }) => (
               backgroundColor={`#040e18`}
               // You are able to set a classId and style by wrapper (see below):
               // classId="gbi"
-              style={{
-                // Defaults are overwrite-able by setting one of the following:
-                // backgroundSize: '',
-                // backgroundPosition: '',
-                // backgroundRepeat: '',
-              }}
+              // style={{
+              //   // Defaults are overwrite-able by setting one of the following:
+              //   // backgroundSize: '',
+              //   // backgroundPosition: '',
+              //   // backgroundRepeat: '',
+              // }}
             >
               {children}
             </BackgroundImage>
@@ -101,7 +101,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   // the pseudo-elements without further ado (except when overwritten).
   //background-repeat: repeat-y;
   //background-position: left center;
-  //background-size: contain;
+  background-size: contain;
   
   // With media-queries you have to overwrite the default options (see style={{}} above).
   // ${media.lessThan('large')`
@@ -115,7 +115,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   // See: https://github.com/timhagn/gatsby-background-image/issues/20  
   //&:after, &:before {
   //   background-clip: content-box;
-  //   //background-size: cover;
+  //   background-size: contain;
   //}
 `
 
