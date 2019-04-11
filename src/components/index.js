@@ -101,7 +101,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   // the pseudo-elements without further ado (except when overwritten).
   //background-repeat: repeat-y;
   //background-position: left center;
-  background-size: contain;
+  //background-size: cover;
   
   // With media-queries you have to overwrite the default options (see style={{}} above).
   // ${media.lessThan('large')`
