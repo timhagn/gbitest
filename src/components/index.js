@@ -129,6 +129,7 @@ const StyledWrapper = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+  overflow: hidden;
 
   // This is an example how to target the pseudo-elements via classId (deprecated):
   //.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {

@@ -10,6 +10,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
 import StyledBackgroundSection from './index'
+import Header from './header'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -23,6 +24,8 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
+      <>
+      <Header siteTitle={data.site.siteMetadata.title} />
       <StyledBackgroundSection>
         <div
           style={{
@@ -56,6 +59,7 @@ const Layout = ({ children }) => (
           </div>
         </div>
       </StyledBackgroundSection>
+      </>
     )}
   />
 )
