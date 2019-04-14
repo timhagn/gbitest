@@ -62,6 +62,8 @@ const BackgroundSection = ({ className, children }) => (
               // className="test"
               fluid={imageData}
               backgroundColor={`#040e18`}
+              // Title get's passed to both container and noscriptImg.
+              title="gbitest"
               // You are able to set a classId and style by wrapper (see below):
               // classId="gbi"
               // style={{
@@ -70,6 +72,10 @@ const BackgroundSection = ({ className, children }) => (
               //   // backgroundPosition: '',
               //   // backgroundRepeat: '',
               // }}
+              // You can "safely" (look them up beforehand ; ) add other props:
+              id="gbitest"
+              role="img"
+              aria-label="gbitest"
             >
               {children}
             </BackgroundImage>
@@ -124,7 +130,7 @@ const StyledWrapper = styled.div`
   height: 100vh;
   display: flex;
 
-  // This is an example how to target the pseudo-elements via classId:
+  // This is an example how to target the pseudo-elements via classId (deprecated):
   //.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {
   //  background-clip: content-box;
   //}
