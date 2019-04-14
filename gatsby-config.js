@@ -8,7 +8,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-styled-components',
     // Adds in Gatsby image handling
-    // `gatsby-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
