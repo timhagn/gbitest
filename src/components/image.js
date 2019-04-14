@@ -11,9 +11,11 @@ import Img from 'gatsby-image'
  * the image data down from pages.
  *
  * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.app/gatsby-image
- * - `StaticQuery`: https://gatsby.app/staticquery
+ * - `gatsby-background-image`: https://github.com/timhagn/gatsby-background-image
+ * - `gatsby-image`: https://gatsby.dev/gatsby-image
+ * - `StaticQuery`: https://gatsby.dev/staticquery
  */
+
 const Image = () => (
   <StaticQuery
     query={graphql`
