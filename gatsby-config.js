@@ -17,13 +17,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `gatsby-background-image Test Site`,
+        short_name: `gbitest`,
         start_url: `/`,
         background_color: `#00446f`,
         theme_color: `#00446f`,
