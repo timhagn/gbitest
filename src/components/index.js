@@ -72,6 +72,9 @@ const BackgroundSection = ({ className, children }) => (
               //   // backgroundPosition: '',
               //   // backgroundRepeat: '',
               // }}
+              // To "force" the classic fading in of every image (especially on
+              // imageData change for fluid / fixed) by setting `soft` on `fadeIn`:
+              // fadeIn={`soft`}
               // You can "safely" (look them up beforehand ; ) add other props:
               id="gbitest"
               role="img"
