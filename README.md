@@ -41,6 +41,19 @@ Now you only have to change the line `import BackgroundImage from 'gatsby-backgr
 to `import BackgroundImage from 'gatsby-background-image/src'` in 
 [src/components/index.js](src/components/index.js) and you are good to go!
 
- 
+## Scripts
+
+All runnable as `yarn <SCRIPT_NAME>` or `npm run <SCRIPT_NAME>`.
+
+|  Name   |  Function                                                                                                        |
+| ------- | ---------------------------------------------------------------------------------------------------------------- |
+| build   | Generates a production build.                                                                                    |
+| clean   | Removes `.cache` & `public` folders (should you have problems). `develop` script has to be restarted afterwards! |
+| develop | Generates a development build and starts its server (not meant for production!).                                 |
+| format  | Cleans up the code and formats it with [`prettier`](https://prettier.io/).                                       |
+| start   | Alias for `develop`.                                                                                             |
+
+There would be `test` as well - but alas, right now we don't have any for this 
+repo. Feel free to open a PR ; ).
 
 #### Hav Phun : )!
