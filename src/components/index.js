@@ -9,31 +9,12 @@ import { generateMedia } from 'styled-media-query'
 const media = generateMedia()
 
 /**
- * WAS: Transitory possibility for switching to WebP.
- * Should no longer be necessary from gatsby-background-image v0.2.5 onward!
- *
- * @param imageData   Default imageData (fluid / fixed) from GraphQL query.
- * @return {Object}   Switched source properties to WebP.
- *
- * @deprecated
+ * In this functional component a <BackgroundImage />  is compared to an <Img />.
+ * @param className   string    className(s) from styled-components.
+ * @param children    nodes     Child-components from index.js / page-2.js.
+ * @return {*}
+ * @constructor
  */
-/*eslint-disable */
-const switchToWebP = imageData => {
-  let convertedImageData = { ...imageData }
-
-  if (convertedImageData.src && convertedImageData.srcWebp) {
-    convertedImageData.srcDefault = convertedImageData.src
-    convertedImageData.src = convertedImageData.srcWebp
-  }
-  if (convertedImageData.srcSet && convertedImageData.srcSetWebp) {
-    convertedImageData.srcSetDefault = convertedImageData.srcSet
-    convertedImageData.srcSet = convertedImageData.srcSetWebp
-  }
-
-  return convertedImageData
-}
-/*eslint-enable */
-
 const BackgroundSection = ({ className, children }) => (
   <StaticQuery
     query={graphql`
@@ -48,10 +29,8 @@ const BackgroundSection = ({ className, children }) => (
       }
     `}
     render={data => {
-      // Extract imageData (default).
+      // Extract imageData.
       const imageData = data.desktop.childImageSharp.fluid
-      // Until v0.2.5 was published, temporary possibility to switch to WebP.
-      // const imageData = switchToWebP(data.desktop.childImageSharp.fluid)
       return (
         <StyledWrapper>
           <StyledSymetryWrapper>
@@ -64,7 +43,8 @@ const BackgroundSection = ({ className, children }) => (
               backgroundColor={`#040e18`}
               // Title get's passed to both container and noscriptImg.
               title="gbitest"
-              // You are able to set a classId and style by wrapper (see below):
+              // You are able to set a classId and style by wrapper (see below or
+              // https://github.com/timhagn/gatsby-background-image/#styling--passed-through-styles):
               // classId="gbi"
               // style={{
               //   // Defaults are overwrite-able by setting one of the following:
@@ -74,7 +54,7 @@ const BackgroundSection = ({ className, children }) => (
               // }}
               // To "force" the classic fading in of every image (especially on
               // imageData change for fluid / fixed) by setting `soft` on `fadeIn`:
-              fadeIn={`soft`}
+              // fadeIn={`soft`}
               // You can "safely" (look them up beforehand ; ) add other props:
               id="gbitest"
               role="img"
@@ -121,7 +101,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   // `}
   
   // For pseudo-elements you have to overwrite the default options (see style={{}} above).
-  // See: https://github.com/timhagn/gatsby-background-image/issues/20  
+  // See: https://github.com/timhagn/gatsby-background-image/#styling--passed-through-styles 
   //&:after, &:before {
   //   background-clip: content-box;
   //   background-size: contain;
