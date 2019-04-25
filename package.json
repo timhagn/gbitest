@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "gatsby": "2.3.30",
-    "gatsby-background-image": "^0.4.0",
+    "gatsby-background-image": "^0.4.1",
     "gatsby-image": "^2.0.40",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.25",
@@ -41,7 +41,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -p9001",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
