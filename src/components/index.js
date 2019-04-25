@@ -64,7 +64,12 @@ const BackgroundSection = ({ className, children }) => (
             </BackgroundImage>
           </StyledSymetryWrapper>
           <StyledSymetryWrapper>
-            <StyledWelcomeImage fluid={imageData} backgroundColor="#040e18" />
+            <StyledWelcomeImage
+              fluid={imageData}
+              backgroundColor="#040e18"
+              objectFit="cover"
+              objectPosition="50% 50%"
+            />
           </StyledSymetryWrapper>
         </StyledWrapper>
       )
