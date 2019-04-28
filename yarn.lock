@@ -837,10 +837,10 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.4.3":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.3.tgz#79888e452034223ad9609187a0ad1fe0d2ad4bdc"
-  integrity sha512-9lsJwJLxDh/T3Q3SZszfWOTkk3pHbkmH+3KY+zwIDmsNlxsumuhS2TH3NIpktU4kNvfzy+k3eLT7aTJSPTo0OA==
+"@babel/runtime@^7.4.4":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.4.tgz#dc2e34982eb236803aa27a07fea6857af1b9171d"
+  integrity sha512-w0+uT71b6Yi7i5SE0co4NioIpSYS6lLiXvCzWzGSKvpK5vdQtCbICHMj+gbAKAOtxiV6HsVh/MBdaF9EQ6faSg==
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -4856,12 +4856,12 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-background-image@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.4.1.tgz#1563fa91f50361ea744107044f420fbb16e9fcfc"
-  integrity sha512-m0BpyCxvmGo2l6qN8G7ztEzKnFpG12HusWtWvljLsj6n1CPfoRnTdPgpv+oMppMcCWKS7Y7kz5CTwnaUfexXTg==
+gatsby-background-image@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.4.2.tgz#61a633b11c9f7109f1471cc2d928516ea13f2500"
+  integrity sha512-bA6JCbxrkQF2ETrAibW4vdMRUbsRdVMWV1uz214bDgu7WYU3HQX7iF+k7dz/KxcK29MFti9bxyHSpga0MnPrZA==
   dependencies:
-    "@babel/runtime" "^7.4.3"
+    "@babel/runtime" "^7.4.4"
     global "^4.3.2"
     prop-types "^15.7.2"
 
@@ -4919,7 +4919,7 @@ gatsby-link@^2.0.16:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-manifest@^2.0.29:
+gatsby-plugin-manifest@2.0.29:
   version "2.0.29"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.29.tgz#ce83b0ef1aa2d74b9027c3bdb26be2fbd25ef1bc"
   integrity sha512-zxUuoKxjjdEyj8Xh/svTIOhaIjONB2txel441yJXoYfHmNndysEn+DcYUMkN4xQwZLIaVKoQZ/fCNcVhUOUGIg==
@@ -5051,10 +5051,10 @@ gatsby-transformer-sharp@^2.1.18:
     probe-image-size "^4.0.0"
     sharp "^0.21.3"
 
-gatsby@2.3.31:
-  version "2.3.31"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.31.tgz#9ec87eea5ac02e74e96748aabffea9c268a45382"
-  integrity sha512-kUkwhkDgPYJX+huwue6kpW8eaERFN6lL8Cym/POeNSqC7O+oUFtxS30Xg1L2JDax8WYVaGP9Wq427Zd7/u9SOQ==
+gatsby@2.3.32:
+  version "2.3.32"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.32.tgz#bb6bb141c8122cd023eddc9d1aaec1dbea4917f2"
+  integrity sha512-nSlc6IdNoOfzuDme+Z2gSkqmXB+0/j3Y+ElFSE6G8m3hCkV+2CuP7YsREe9V/K1609QwJcmQFRNAqtS1/uYjXw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
