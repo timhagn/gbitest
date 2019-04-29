@@ -72,7 +72,7 @@ const BackgroundSection = ({ className, children }) => {
           // To style via external CSS see layout.css last examples:
           // className="test"
           fluid={imageData}
-          backgroundColor={`#040e18`}
+          backgroundColor={`#0f0`}
           // Title get's passed to both container and noscriptImg.
           title="gbitest"
           // You are able to set a classId and style by wrapper (see below or
@@ -101,7 +101,7 @@ const BackgroundSection = ({ className, children }) => {
           className={`main-img`}
           id="main-img"
           fluid={imageData}
-          backgroundColor="#040e18"
+          backgroundColor="#0f0"
           objectFit="cover"
           objectPosition="50% 50%"
           style={{
