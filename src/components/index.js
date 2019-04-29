@@ -23,7 +23,7 @@ const BackgroundSection = ({ className, children }) => {
         desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -33,7 +33,11 @@ const BackgroundSection = ({ className, children }) => {
   const logObservedCallback = (mutationsList, observer) => {
     if (!mutationsList) return
     mutationsList.forEach(mutation => {
-      if (mutation.target instanceof HTMLImageElement && reactNode) {
+      if (
+        mutation.target instanceof HTMLImageElement &&
+        reactNode &&
+        reactNode.id === `main-img`
+      ) {
         console.log(
           mutation.target.nodeName,
           mutation.target.currentSrc,
@@ -49,11 +53,8 @@ const BackgroundSection = ({ className, children }) => {
           console.log(mutation.target.nodeName, mutation)
         }
       }
-      if (mutation.target instanceof HTMLImageElement) {
-        console.log(
-          mutation.target.nodeName,
-          mutation.target.currentSrc
-        )
+      if (mutation.target instanceof HTMLImageElement && mutation.target.currentSrc.find) {
+        console.log(mutation.target.nodeName, mutation.target.currentSrc)
       }
     })
   }
@@ -61,12 +62,16 @@ const BackgroundSection = ({ className, children }) => {
     logObservedCallback,
     leftOvers => console.log(leftOvers)
   )
+  const [bgImgRef] = useMutationObserverRef(logObservedCallback, leftOvers =>
+    console.log(leftOvers)
+  )
   // Extract imageData.
   const imageData = desktop.childImageSharp.fluid
   return (
     <StyledWrapper>
       <StyledSymetryWrapper>
         <BackgroundImage
+          ref={bgImgRef}
           Tag="section"
           className={className}
           // To style via external CSS see layout.css last examples:
@@ -91,6 +96,11 @@ const BackgroundSection = ({ className, children }) => {
           id="gbitest"
           role="img"
           aria-label="gbitest"
+          onLoad={() => console.log(`onLoad`)}
+          onError={() => console.log(`onError`)}
+          onStartLoad={({ wasCached }) =>
+            console.log(`onStartLoad - wasCached:`, wasCached)
+          }
         >
           {children}
         </BackgroundImage>
