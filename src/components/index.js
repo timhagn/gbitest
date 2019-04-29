@@ -1,21 +1,13 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import BackgroundImage from 'gatsby-background-image'
 import { generateMedia } from 'styled-media-query'
-import { findDOMNode } from 'react-dom'
+import useMutationObserverRef from './useMutationObserverRef'
 
 const media = generateMedia()
-
-const logObservedCallback = (mutationsList, observer) => {
-  if (!mutationsList) return
-  mutationsList.forEach(mutation => {
-    if (mutation.type === `attributes`)
-    console.log(mutation)
-  })
-}
 
 /**
  * In this functional component a <BackgroundImage />  is compared to an <Img />.
@@ -31,32 +23,27 @@ const BackgroundSection = ({ className, children }) => {
         desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
       }
     `
   )
-  const observer = new MutationObserver(logObservedCallback)
-  const measuredRef = useCallback(targetNode => {
-    if (targetNode !== null) {
-      const config = {
-        attributes: true,
-        childList: true,
-        subtree: true,
-        characterData: true,
-        attributeOldValue: true,
-        characterDataOldValue: true,
+  const logObservedCallback = (mutationsList, observer) => {
+    if (!mutationsList) return
+    mutationsList.forEach(mutation => {
+      if (mutation.target instanceof HTMLImageElement && reactNode) {
+        console.log(mutation.target.currentSrc, reactNode)
+      } else {
+        console.log(mutation)
       }
-      const node = findDOMNode(targetNode)
-      observer.observe(node, config)
-      return () => {
-        observer.disconnect()
+      if (mutation.target instanceof HTMLImageElement) {
+        console.log(`complete`, mutation.target.complete)
       }
-    }
-  }, []);
-
+    })
+  }
+  const [measuredRef, reactNode] = useMutationObserverRef(logObservedCallback)
   // Extract imageData.
   const imageData = desktop.childImageSharp.fluid
   return (

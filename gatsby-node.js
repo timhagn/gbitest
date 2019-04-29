@@ -5,3 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+// For function createNodeField
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+}
