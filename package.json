@@ -38,7 +38,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "dist": "gatsby clean && gatsby build && cp -r public dist",
+    "dist": "rm -rf dist && gatsby clean && gatsby build && cp -r public dist",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
