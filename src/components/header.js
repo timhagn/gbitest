@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       top: 0,
       left: 0,
       zIndex: 1,
-      width: `100vw`
+      width: `100vw`,
     }}
   >
     <div

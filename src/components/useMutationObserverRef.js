@@ -34,14 +34,14 @@ const defaultCallback = mutationsList => mutationsList
  * Creates a callbackRef to spy on React element mutations.
  *
  * @param callback  MutationObserver callback with (mutationsList, observer).
- * @param config    MutationObserver configuration object.
  * @param onUnmount Function to be called on unmount.
+ * @param config    MutationObserver configuration object.
  * @return {*[]}    Returns the callback reference measuredRef and React element.
  */
 const useMutationObserverRef = (
   callback = defaultCallback,
-  config = defaultConfig,
-  onUnmount = () => {}
+  onUnmount = () => {},
+  config = defaultConfig
 ) => {
   // Create MutationObserver (if window exists) and memoize it,
   // watch for callback changes.

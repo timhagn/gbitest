@@ -43,7 +43,10 @@ const BackgroundSection = ({ className, children }) => {
       }
     })
   }
-  const [measuredRef, reactNode] = useMutationObserverRef(logObservedCallback)
+  const [measuredRef, reactNode] = useMutationObserverRef(
+    logObservedCallback,
+    leftOvers => console.log(leftOvers)
+  )
   // Extract imageData.
   const imageData = desktop.childImageSharp.fluid
   return (
