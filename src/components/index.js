@@ -33,37 +33,35 @@ const BackgroundSection = ({ className, children }) => {
   const logObservedCallback = (mutationsList, observer) => {
     if (!mutationsList) return
     mutationsList.forEach(mutation => {
-      if (
-        mutation.target instanceof HTMLImageElement &&
-        reactNode &&
-        reactNode.id === `main-img`
-      ) {
+      if (mutation.previousSibling instanceof HTMLImageElement) {
         console.log(
-          mutation.target.nodeName,
-          mutation.target.currentSrc,
-          reactNode
+          `PREV-${mutation.previousSibling.nodeName}`,
+          mutation.previousSibling.currentSrc
         )
-      } else {
-        if (mutation.previousSibling instanceof HTMLImageElement) {
-          console.log(
-            `PREV-${mutation.previousSibling.nodeName}`,
-            mutation.previousSibling.currentSrc
-          )
-        } else {
-          console.log(mutation.target.nodeName, mutation)
-        }
       }
-      if (mutation.target instanceof HTMLImageElement && mutation.target.currentSrc.find) {
+      if (
+        mutation.type === `childList` &&
+        mutation.addedNodes[0] instanceof HTMLPictureElement
+      ) {
+        console.log(mutation.addedNodes[0].nodeName, mutation)
+      }
+      if (reactNode && reactNode.props.id === `main-img`) {
+        console.log(mutation.target.nodeName, reactNode.state)
+      }
+      if (
+        mutation.target instanceof HTMLImageElement
+      ) {
         console.log(mutation.target.nodeName, mutation.target.currentSrc)
       }
     })
   }
+
+  // const [bgImgRef] = useMutationObserverRef(logObservedCallback, leftOvers =>
+  //   console.log(leftOvers)
+  // )
   const [measuredRef, reactNode] = useMutationObserverRef(
     logObservedCallback,
     leftOvers => console.log(leftOvers)
-  )
-  const [bgImgRef] = useMutationObserverRef(logObservedCallback, leftOvers =>
-    console.log(leftOvers)
   )
   // Extract imageData.
   const imageData = desktop.childImageSharp.fluid
@@ -71,7 +69,7 @@ const BackgroundSection = ({ className, children }) => {
     <StyledWrapper>
       <StyledSymetryWrapper>
         <BackgroundImage
-          ref={bgImgRef}
+          // ref={bgImgRef}
           Tag="section"
           className={className}
           // To style via external CSS see layout.css last examples:
