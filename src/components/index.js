@@ -1,4 +1,4 @@
-import React, { forwardRef, useCallback, useEffect } from 'react'
+import React, { useCallback } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
