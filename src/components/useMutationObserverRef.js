@@ -35,11 +35,13 @@ const defaultCallback = mutationsList => mutationsList
  *
  * @param callback  MutationObserver callback with (mutationsList, observer).
  * @param config    MutationObserver configuration object.
+ * @param onUnmount Function to be called on unmount.
  * @return {*[]}    Returns the callback reference measuredRef and React element.
  */
 const useMutationObserverRef = (
   callback = defaultCallback,
-  config = defaultConfig
+  config = defaultConfig,
+  onUnmount = () => {}
 ) => {
   // Create MutationObserver (if window exists) and memoize it,
   // watch for callback changes.
@@ -65,7 +67,10 @@ const useMutationObserverRef = (
       const node = findDOMNode(reactElement)
       observer.observe(node, config)
       return () => {
+        // Catch remaining records.
+        const leftOvers = observer.takeRecords()
         observer.disconnect()
+        onUnmount(leftOvers)
       }
     }
   }, [reactElement])
