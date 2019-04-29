@@ -34,12 +34,26 @@ const BackgroundSection = ({ className, children }) => {
     if (!mutationsList) return
     mutationsList.forEach(mutation => {
       if (mutation.target instanceof HTMLImageElement && reactNode) {
-        console.log(mutation.target.currentSrc, reactNode)
+        console.log(
+          mutation.target.nodeName,
+          mutation.target.currentSrc,
+          reactNode
+        )
       } else {
-        console.log(mutation)
+        if (mutation.previousSibling instanceof HTMLImageElement) {
+          console.log(
+            `PREV-${mutation.previousSibling.nodeName}`,
+            mutation.previousSibling.currentSrc
+          )
+        } else {
+          console.log(mutation.target.nodeName, mutation)
+        }
       }
       if (mutation.target instanceof HTMLImageElement) {
-        console.log(`complete`, mutation.target.complete)
+        console.log(
+          mutation.target.nodeName,
+          mutation.target.currentSrc
+        )
       }
     })
   }
