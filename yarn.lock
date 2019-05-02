@@ -4856,10 +4856,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-background-image@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.5.0.tgz#2e987210ca097bc2711f0e7b4dc06d483568ff0e"
-  integrity sha512-+73Z/sv3lraVj6/TKiLDhd58WO5dn8QQD69VWoFXw+hDdevPTSz3Hksh9W+2tdppJNpV5xYnZOpDGc96+tm2DQ==
+gatsby-background-image@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.5.1.tgz#a112deeeff9139ecad0f028b0cec2acf3e61164d"
+  integrity sha512-NynrZYxqe7+kagFBBezcVPn7SLrKB5om/AEqQzOJZfX8Alsx1glJjD3Flk0IHkcBswwYrYTbKODqA543Jbqgbg==
   dependencies:
     "@babel/runtime" "^7.4.4"
     global "^4.3.2"
@@ -5051,10 +5051,10 @@ gatsby-transformer-sharp@^2.1.18:
     probe-image-size "^4.0.0"
     sharp "^0.21.3"
 
-gatsby@2.3.34:
-  version "2.3.34"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.34.tgz#3901e1c91eeca00d096cfc5a5fae6dc21ca4ec15"
-  integrity sha512-IyaP4JF2DiVSnqQ45Gbrm0KWywEvyWat5/U42r66YweFMf/c2lFA2oxWtfLFCQBl681xk/7+ZGleE9UnK/f9ZA==
+gatsby@2.3.36:
+  version "2.3.36"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.36.tgz#5a1a4fe20b6988671f6bf69d2abec219110bc4ca"
+  integrity sha512-tVgSoxGH0xL/fBahxIxmJQpFg5Wou6FrvYa2qd9ADfbFHmyEc00C/x9XXpv9mg51z9n2y1xzswFnMjopBJpKUg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
