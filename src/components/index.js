@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import BackgroundImage from 'gatsby-background-image/src'
+import BackgroundImage from 'gatsby-background-image'
 import { generateMedia } from 'styled-media-query'
 import useMutationObserverRef from './useMutationObserverRef'
 
