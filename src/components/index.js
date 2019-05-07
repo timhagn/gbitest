@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from 'gatsby-background-image/src'
 import { generateMedia } from 'styled-media-query'
 import useMutationObserverRef from './useMutationObserverRef'
 
@@ -17,12 +17,19 @@ const media = generateMedia()
  * @constructor
  */
 const BackgroundSection = ({ className, children }) => {
-  const { desktop } = useStaticQuery(
+  const { desktop, placeholderImage } = useStaticQuery(
     graphql`
       query {
         desktop: file(relativePath: { eq: "seamless-bg-desktop.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -56,18 +63,54 @@ const BackgroundSection = ({ className, children }) => {
     })
   }
 
-  // const [bgImgRef] = useMutationObserverRef(logObservedCallback, leftOvers =>
-  //   console.log(leftOvers)
-  // )
+  const [bgImgRef] = useMutationObserverRef(logObservedCallback, leftOvers =>
+    console.log(leftOvers)
+  )
   const [measuredRef, reactNode] = useMutationObserverRef(
     logObservedCallback,
     leftOvers => console.log(leftOvers)
   )
+
+
+
   // Extract imageData.
   const imageData = desktop.childImageSharp.fluid
   return (
     <StyledWrapper>
       <StyledSymetryWrapper>
+        <BackgroundImage
+          ref={bgImgRef}
+          Tag="section"
+          className={className}
+          // To style via external CSS see layout.css last examples:
+          // className="test"
+          fluid={placeholderImage.childImageSharp.fluid}
+          backgroundColor={`#0f0`}
+          // Title get's passed to both container and noscriptImg.
+          title="gbitest"
+          // You are able to set a classId and style by wrapper (see below or
+          // https://github.com/timhagn/gatsby-background-image/#styling--passed-through-styles):
+          // classId="gbi"
+          //   // Defaults are overwrite-able by setting one of the following:
+          //   // backgroundSize: '',
+          //   // backgroundPosition: '',
+          //   // backgroundRepeat: '',
+          // }}
+          // To "force" the classic fading in of every image (especially on
+          // imageData change for fluid / fixed) by setting `soft` on `fadeIn`:
+          fadeIn={`soft`}
+          // You can "safely" (look them up beforehand ; ) add other props:
+          id="gbitest"
+          role="img"
+          aria-label="gbitest"
+          onLoad={() => console.log(`onLoad`)}
+          onError={() => console.log(`onError`)}
+          onStartLoad={({ wasCached }) =>
+            console.log(`onStartLoad - wasCached:`, wasCached)
+          }
+        >
+          {children}
+        </BackgroundImage>
         <BackgroundImage
           // ref={bgImgRef}
           Tag="section"
@@ -130,6 +173,7 @@ const StyledSymetryWrapper = styled.div`
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100vw;
+  max-height: 50%;
   
   // These three crucial styles (if existing) are directly parsed and added to 
   // the pseudo-elements without further ado (except when overwritten).
