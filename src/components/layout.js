@@ -39,16 +39,15 @@ const Layout = ({ children }) => (
           >
             <div
               style={{
-                placeSelf: `center`,
+                display: `flex`,
                 textAlign: `center`,
                 color: `#ccc`,
-                height: `50vh`,
                 maxWidth: 960,
-                padding: `0px 1.0875rem 1.45rem`,
-                marginTop: `-5rem`,
+                margin: `auto 53% auto auto`,
+                alignItems: `center`,
               }}
             >
-              <main>{children}</main>
+              <div>{children}</div>
             </div>
           </div>
         </StyledBackgroundSection>
