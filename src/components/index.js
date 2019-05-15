@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import BackgroundImage from 'gatsby-background-image'
+// Use the following to support legacy browsers like IE11:
+// import BackgroundImage from 'gatsby-background-image-es5'
 import { generateMedia } from 'styled-media-query'
 
 const media = generateMedia()
@@ -54,7 +56,7 @@ const BackgroundSection = ({ className, children }) => (
               // }}
               // To "force" the classic fading in of every image (especially on
               // imageData change for fluid / fixed) by setting `soft` on `fadeIn`:
-              fadeIn={`soft`}
+              // fadeIn={`soft`}
               // You can "safely" (look them up beforehand ; ) add other props:
               id="gbitest"
               role="img"
@@ -66,7 +68,7 @@ const BackgroundSection = ({ className, children }) => (
           <StyledSymetryWrapper>
             <StyledWelcomeImage
               fluid={imageData}
-              backgroundColor="#040e18"
+              backgroundColor={`#040e18`}
               objectFit="cover"
               objectPosition="50% 50%"
             />
