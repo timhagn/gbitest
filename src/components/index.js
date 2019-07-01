@@ -57,6 +57,9 @@ const BackgroundSection = ({ className, children }) => (
               // To "force" the classic fading in of every image (especially on
               // imageData change for fluid / fixed) by setting `soft` on `fadeIn`:
               // fadeIn={`soft`}
+              // To be able to use stacking context changing elements yourself,
+              // set this to true to disable the "opacity hack":
+              // preserveStackingContext={true}
               // You can "safely" (look them up beforehand ; ) add other props:
               id="gbitest"
               role="img"
