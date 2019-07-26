@@ -56,4 +56,17 @@ All runnable as `yarn <SCRIPT_NAME>` or `npm run <SCRIPT_NAME>`.
 There would be `test` as well - but alas, right now we don't have any for this 
 repo. Feel free to open a PR ; ).
 
+## Troubleshooting npm "screaming" about package vulnerabilities
+
+As I'm quite eager to see to it that no vulnerabilities **ever** get published 
+with `gatsby-background-image` & `gatsby-background-image-es5`, but sometimes
+npm still "screamed" at me about other packages having some when I bumped 
+dependency versions of `gbitest`, I usually could fix them with a simple:
+
+```bash
+npm audit --fix
+```
+
+So have no fears ; ).
+
 #### Hav Phun : )!
