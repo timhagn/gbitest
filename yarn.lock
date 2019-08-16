@@ -5001,10 +5001,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-background-image@^0.8.3:
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.8.3.tgz#2cd4070b19500115b56f7dd688f1e051ac6a3954"
-  integrity sha512-knZUK+hwdfLsrMEA/DNTcRRDnbBgmAM99nonLtA5Z39y43stD+GtW2SONHfIHYzCsZ6QuS7bdqtvkr00z0dTag==
+gatsby-background-image@^0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.8.4.tgz#15885108abe3006b3b6649973cea0c0fc1280dd4"
+  integrity sha512-6D37XUPXL1RSgveb/qFNzWsebLJQRO6jX/SECaqpY9nGVuAREdAtoo9HsGbLQsKLF/LrUQ2+OEJUehMJUR7lMQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
     global "^4.4.0"
