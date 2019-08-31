@@ -2,17 +2,17 @@
   "name": "gbitest",
   "private": true,
   "description": "A simple starter to show what gatsby-background-image can do.",
-  "version": "0.4.12",
+  "version": "0.4.13",
   "author": "Tim Hagn <mail@timhagn.com>",
   "contributors": [
     "Tim Hagn <mail@timhagn.com>",
     "Kyle Mathews <mathews.kyle@gmail.com>"
   ],
   "dependencies": {
-    "gatsby": "2.14.6",
-    "gatsby-background-image": "^0.8.6",
-    "gatsby-image": "^2.2.14",
-    "gatsby-plugin-manifest": "2.2.10",
+    "gatsby": "2.15.1",
+    "gatsby-background-image": "^0.8.7",
+    "gatsby-image": "^2.2.15",
+    "gatsby-plugin-manifest": "2.2.12",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "3.1.5",
     "gatsby-plugin-sharp": "2.2.18",
