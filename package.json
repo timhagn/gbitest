@@ -6,7 +6,7 @@
   "author": "Tim Hagn <mail@timhagn.com>",
   "dependencies": {
     "gatsby": "2.15.28",
-    "gatsby-background-image": "^0.8.14",
+    "gatsby-background-image": "^0.8.15",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-manifest": "2.2.20",
     "gatsby-plugin-offline": "^2.2.10",
@@ -16,8 +16,8 @@
     "gatsby-source-filesystem": "^2.1.28",
     "gatsby-transformer-sharp": "^2.2.19",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.4.0",
     "styled-media-query": "^2.1.2"
