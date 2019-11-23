@@ -3,11 +3,11 @@ import React from 'react'
 import Layout from '../components/Layout'
 import AstronautImage from '../components/AstronautImage'
 import SEO from '../components/SEO'
-import { Link } from 'gatsby'
-import StyledBackgroundSection from '../components'
+import StyledBackgroundSection from '../components/BackgroundSection'
 import {
   StyledContentWrapperLeft,
-  StyledImageWrapper, StyledLink,
+  StyledImageWrapper,
+  StyledLink,
   StyledWrapper,
 } from '../components/SharedStyledComponents'
 
@@ -26,7 +26,7 @@ const IndexPage = () => (
               Welcome to the <code>gatsby-background-image</code> test site.
             </p>
             <p>
-              Below, you see an image rendered by{' '}
+              As the left background, you see an image rendered by{' '}
               <code>gatsby-background-image</code>
             </p>
             <p>
@@ -35,8 +35,12 @@ const IndexPage = () => (
             <StyledImageWrapper>
               <AstronautImage />
             </StyledImageWrapper>
-            Go to <StyledLink to="/page-2/">page 2</StyledLink> to see an example of
-            <strong> multiple stacked background images</strong>.
+            Go to <StyledLink to="/image-stack/">image stack</StyledLink> to
+            see an example of
+            <strong> multiple stacked background images</strong>.<br/>
+            Go to <StyledLink to="/art-direction/">art direction</StyledLink> to
+            see an example of
+            <strong> art-directed background images</strong>.
           </div>
         </StyledContentWrapperLeft>
       </StyledWrapper>

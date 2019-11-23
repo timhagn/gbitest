@@ -26,7 +26,10 @@ const FullBackground = ({ className, children }) => {
       }
     `
   )
+
+  // Single Image Data
   const imageData = desktop.childImageSharp.fluid
+
   return (
     <StyledFullScreenWrapper>
       <BackgroundImage

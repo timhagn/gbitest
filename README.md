@@ -18,7 +18,7 @@ Simple clone this repo and run `yarn` or `npm install` to install.
 On the left side you see content wrapped by `<BackgroundImage />` from `gatsby-background-image`,
 on the right (for comparison) a pure `gatsby-image`. 
 
-Feel free to play around with the `BackgroundSection` in [src/components/index.js](src/components/index.js).
+Feel free to play around with the `BackgroundSection` in [src/components/BackgroundSection.js](src/components/BackgroundSection.js).
 
 There are also included examples on how to target the pseudo-elements in 
 the mentioned file as well as at the end of the CSS-file [src/components/layout.css](src/components/layout.css).

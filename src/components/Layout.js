@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
-import StyledBackgroundSection from './index'
+import StyledBackgroundSection from './BackgroundSection'
 import Header from './Header'
 import Footer from './Footer'
 

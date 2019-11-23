@@ -3,6 +3,11 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
+/**
+ * This component demonstrates how to use multiple stacked background images.
+ * @return {*}
+ * @constructor
+ */
 const GbiStacked = () => {
   const { bubbles, firefox } = useStaticQuery(
     graphql`
@@ -24,10 +29,8 @@ const GbiStacked = () => {
       }
     `
   )
-  //url(https://mdn.mozillademos.org/files/11305/firefox.png),
-  // url(https://mdn.mozillademos.org/files/11307/bubbles.png),
-  // linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-  // Multiple Backgrounds
+
+  // Multiple Background Array
   const firefoxExampleFluidImageStack = [
     firefox.childImageSharp.fluid,
     bubbles.childImageSharp.fluid,

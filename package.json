@@ -2,7 +2,7 @@
   "name": "gbitest",
   "private": true,
   "description": "A simple starter to show what gatsby-background-image can do.",
-  "version": "0.5.2",
+  "version": "0.9.7",
   "author": "Tim Hagn <mail@timhagn.com>",
   "dependencies": {
     "gatsby": "2.18.2",
