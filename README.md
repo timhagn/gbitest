@@ -18,6 +18,11 @@ Simple clone this repo and run `yarn` or `npm install` to install.
 On the left side you see content wrapped by `<BackgroundImage />` from `gatsby-background-image`,
 on the right (for comparison) a pure `gatsby-image`. 
 
+Under /image-stack/ you see an example with Multiple Stacked Background Images.
+
+Browsing to /art-direction/ shows an example with a `media` prop for 
+Art Directed Background Images.
+
 Feel free to play around with the `BackgroundSection` in [src/components/BackgroundSection.js](src/components/BackgroundSection.js).
 
 There are also included examples on how to target the pseudo-elements in 
@@ -58,5 +63,10 @@ npm audit --fix
 ```
 
 So have no fears ; ).
+
+## Versioning
+
+As of `gbi(-es5)` `v0.9.7` this package will follow the versioning of `gbi(-es5)` 
+(last version before was `0.5.2`).
 
 #### Hav Phun : )!

@@ -6,7 +6,7 @@
   "author": "Tim Hagn <mail@timhagn.com>",
   "dependencies": {
     "gatsby": "2.18.2",
-    "gatsby-background-image": "^0.9.6",
+    "gatsby-background-image": "^0.9.7",
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-manifest": "2.2.29",
     "gatsby-plugin-offline": "^3.0.22",
