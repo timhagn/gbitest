@@ -1,32 +1,21 @@
 import React from 'react'
 
-import Layout from '../components/layout'
-import Image from '../components/image'
-import SEO from '../components/seo'
+import Layout from '../components/Layout'
+import AstronautImage from '../components/AstronautImage'
+import SEO from '../components/SEO'
 import { Link } from 'gatsby'
 import StyledBackgroundSection from '../components'
+import {
+  StyledContentWrapperLeft,
+  StyledImageWrapper, StyledLink,
+  StyledWrapper,
+} from '../components/SharedStyledComponents'
 
 const IndexPage = () => (
   <Layout>
     <StyledBackgroundSection>
-      <div
-        style={{
-          height: `100vh`,
-          width: `100%`,
-          display: `flex`,
-          placeContent: `start`,
-        }}
-      >
-        <div
-          style={{
-            display: `flex`,
-            textAlign: `center`,
-            color: `#ccc`,
-            maxWidth: 960,
-            margin: `auto 53% auto auto`,
-            alignItems: `center`,
-          }}
-        >
+      <StyledWrapper>
+        <StyledContentWrapperLeft>
           <div>
             <SEO
               title="gatsby-background-image test"
@@ -43,20 +32,14 @@ const IndexPage = () => (
             <p>
               To the right, the same image rendered by <code>gatsby-image</code>
             </p>
-            <div
-              style={{
-                maxWidth: `300px`,
-                margin: `0 auto`,
-                marginBottom: `1.45rem`,
-              }}
-            >
-              <Image />
-            </div>
-            Go to <Link to="/page-2/">page 2</Link> to see an example of
-            multiple stacked background images.
+            <StyledImageWrapper>
+              <AstronautImage />
+            </StyledImageWrapper>
+            Go to <StyledLink to="/page-2/">page 2</StyledLink> to see an example of
+            <strong> multiple stacked background images</strong>.
           </div>
-        </div>
-      </div>
+        </StyledContentWrapperLeft>
+      </StyledWrapper>
     </StyledBackgroundSection>
   </Layout>
 )
