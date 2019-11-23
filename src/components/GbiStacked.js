@@ -44,18 +44,19 @@ const GbiStacked = () => {
       id="imagestack"
       role="img"
       aria-label="A GBI background stack with the firefox example"
+      style={{
+        backgroundColor: 'white',
+        backgroundRepeat: 'no-repeat, no-repeat, no-repeat',
+        backgroundPosition: 'bottom right, left, right',
+        backgroundSize: '',
+      }}
     />
-
   )
 }
 
 const StyledStackedBackgrounds = styled(BackgroundImage)`
   width: 600px;
   height: 400px;
-  background-color: white;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: bottom right, left, right;
-  background-size: auto;
 `
 
 export default GbiStacked
