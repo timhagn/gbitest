@@ -6,7 +6,6 @@ import SEO from '../components/SEO'
 import {
   StyledContentCenterWrapper,
   StyledImageWrapper,
-  StyledLink,
 } from '../components/SharedStyledComponents'
 import GbiStacked from '../components/GbiStacked'
 import StyledFullBackground from '../components/FullBackground'
