@@ -5283,10 +5283,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-background-image@^0.9.17:
-  version "0.9.17"
-  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.9.17.tgz#462493b53c1108b6e80d06830e05b9828a942725"
-  integrity sha512-iaLviJ2R7YVR0ynmr9ta+srWSoNPTZkejfxMfpPk6L6hhAJ1q4QkKUTDRSpTokgkjKnszaQv6A1IsBdRv6xkeg==
+gatsby-background-image@^0.9.18:
+  version "0.9.18"
+  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.9.18.tgz#0e71fceb7f27159fcc06cf46288d8903ef2ea48b"
+  integrity sha512-8qYoNUqywTiW90yEcXUmBHB2jEsljzWXCu713Yi1Zrsoh5msnjwaWQNmwtVr9oDUo5RVrn1wW1cL+zvQ71znBg==
   dependencies:
     "@babel/runtime" "^7.8.4"
     filter-invalid-dom-props "^2.0.0"
@@ -5389,7 +5389,7 @@ gatsby-page-utils@^0.0.39:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-manifest@2.2.41:
+gatsby-plugin-manifest@^2.2.41:
   version "2.2.41"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.41.tgz#c6952e466b163145b74aa071822a97a797a68e01"
   integrity sha512-eKbnpDSLbGUzmnfE65uLit/J8XS4LYslyRHtqMhTja6JcdzjXVWFsO9043tqUXfL8+JBw5PccCxZM8BIN23+Vw==
@@ -5432,7 +5432,7 @@ gatsby-plugin-react-helmet@3.1.22:
   dependencies:
     "@babel/runtime" "^7.7.6"
 
-gatsby-plugin-sharp@2.4.5:
+gatsby-plugin-sharp@^2.4.5:
   version "2.4.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.4.5.tgz#9c05a426f43546c61936b773b1844d920eac1252"
   integrity sha512-O2FZcUd78aKNR7Hbommrbc5igW32U2MnenA/Oc55sklFUF+I1fu4N6zMoHfh7sVtWCqZEbQiNO310Zl8jstD5g==
@@ -5530,7 +5530,7 @@ gatsby-transformer-sharp@^2.3.14:
     semver "^5.7.1"
     sharp "^0.23.4"
 
-gatsby@2.19.17:
+gatsby@^2.19.17:
   version "2.19.17"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.19.17.tgz#f512b251d9aeb688bed270f3c2e490887edd2ee8"
   integrity sha512-XJIW61osX5u/DltfAp0OkevQjHbCoRnzUfAElwwUTstUvlLCq4Ihz/1nX8+hp6e1/fxF2e/WRPD1HoDPacsKhQ==
