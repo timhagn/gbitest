@@ -66,6 +66,9 @@ const Header = ({ siteTitle }) => (
       <StyledNavButton nav={'/image-stack/'} to="/image-stack/">
         Image Stack
       </StyledNavButton>
+      <StyledNavButton nav={'/image-stack-2/'} to="/image-stack-2/">
+        Image Stack 2
+      </StyledNavButton>
       <StyledNavButton nav={'/art-direction/'} to="/art-direction/">
         Art Direction
       </StyledNavButton>

@@ -18,16 +18,16 @@ const IndexPage = () => (
         <StyledContentWrapperLeft>
           <div>
             <SEO
-              title="gatsby-background-image test"
+              title="gatsby-background-image/src test"
               keywords={[`gatsby`, `application`, `react`]}
             />
             <h1>Hi people</h1>
             <p>
-              Welcome to the <code>gatsby-background-image</code> test site.
+              Welcome to the <code>gatsby-background-image/src</code> test site.
             </p>
             <p>
               As the left background, you see an image rendered by{' '}
-              <code>gatsby-background-image</code>
+              <code>gatsby-background-image/src</code>
             </p>
             <p>
               To the right, the same image rendered by <code>gatsby-image</code>

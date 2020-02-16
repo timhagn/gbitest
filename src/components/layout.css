@@ -486,7 +486,7 @@ pre tt:after {
 }
 
 /*This is an example of how to target the pseudo-elements via the classId prop:*/
-/*.gatsby-background-image-gbi:after, .gatsby-background-image-gbi:before {*/
+/*.gatsby-background-image/src-gbi:after, .gatsby-background-image/src-gbi:before {*/
 /*background-position: top right;*/
 /*}*/
 

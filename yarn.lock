@@ -5283,10 +5283,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gatsby-background-image@^0.9.19:
-  version "0.9.19"
-  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.9.19.tgz#8c55d73196de4bf9b8e66d57b61f1c7a2afcf83b"
-  integrity sha512-GaAUl66yrdrIlYt7GVCe2Hnnzx8RXLJvs6xR9i3rIsFQoWddzzWbAlMWvGvYU2jPrkW1auq6x+/UAnRFx4RSLQ==
+gatsby-background-image@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-background-image/-/gatsby-background-image-0.10.0.tgz#e337cf4be22dde177fe7983e7059e22f7eb13bb4"
+  integrity sha512-mfWLeiZGZO3o7NXucbxKn6/DOF1ZpQqJOuta8Ld4y4lDSew1jzHlnxf+UU1Q1uWPeoZkQNm/LpMbF5Rt0F9zhA==
   dependencies:
     "@babel/runtime" "^7.8.4"
     filter-invalid-dom-props "^2.0.0"
