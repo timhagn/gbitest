@@ -17,8 +17,8 @@ const Footer = () => (
     {` `}
     <a href="https://www.gatsbyjs.org">Gatsby</a>
     {` & `}
-    <a href="https://github.com/timhagn/gatsby-background-image/src">
-      gatsby-background-image/src
+    <a href="https://github.com/timhagn/gatsby-background-image">
+      gatsby-background-image
     </a>
   </footer>
 )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import BackgroundImage from 'gatsby-background-image/src'
+import BackgroundImage from 'gatsby-background-image'
 
 /**
  * This component demonstrates how to use multiple stacked background images.
@@ -57,6 +57,16 @@ const GbiStacked = () => {
 const StyledStackedBackgrounds = styled(BackgroundImage)`
   width: 600px;
   height: 400px;
+  
+  &:before, &:after {
+    visibility: hidden;
+  }
+  
+  &:hover {
+    &:before, &:after {
+      visibility: visible;
+    }
+  }
 `
 
 export default GbiStacked

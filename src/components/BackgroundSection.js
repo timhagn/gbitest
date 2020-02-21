@@ -3,9 +3,9 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import BackgroundImage from 'gatsby-background-image/src'
+import BackgroundImage from 'gatsby-background-image'
 // Use the following to support legacy browsers like IE11:
-// import BackgroundImage from 'gatsby-background-image/src-es5'
+// import BackgroundImage from 'gatsby-background-image-es5'
 import { generateMedia } from 'styled-media-query'
 import { StyledFullScreenWrapper } from './SharedStyledComponents'
 
@@ -47,7 +47,7 @@ const BackgroundSection = ({ className, children }) => {
           // Title get's passed to both container and noscriptImg.
           title="gbitest"
           // You are able to set a classId and style by wrapper (see below or
-          // https://github.com/timhagn/gatsby-background-image/src/#styling--passed-through-styles):
+          // https://github.com/timhagn/gatsby-background-image/#styling--passed-through-styles):
           // classId="gbi"
           // style={{
           //   // Defaults are overwrite-able by setting one of the following:
@@ -110,7 +110,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   // `}
   
   // For pseudo-elements you have to overwrite the default options (see style={{}} above).
-  // See: https://github.com/timhagn/gatsby-background-image/src/#styling--passed-through-styles 
+  // See: https://github.com/timhagn/gatsby-background-image/#styling--passed-through-styles 
   //&:after, &:before {
   //   background-clip: content-box;
   //   background-size: contain;
