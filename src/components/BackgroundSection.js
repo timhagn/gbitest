@@ -46,9 +46,6 @@ const BackgroundSection = ({ className, children }) => {
           backgroundColor={`#040e18`}
           // Title get's passed to both container and noscriptImg.
           title="gbitest"
-          // You are able to set a classId and style by wrapper (see below or
-          // https://github.com/timhagn/gatsby-background-image/#styling--passed-through-styles):
-          // classId="gbi"
           // style={{
           //   // Defaults are overwrite-able by setting one of the following:
           //   // backgroundSize: '',

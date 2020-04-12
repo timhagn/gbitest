@@ -57,7 +57,7 @@ const GbiStacked = () => {
 const StyledStackedBackgrounds = styled(BackgroundImage)`
   width: 600px;
   height: 400px;
-  
+
   // Uncomment the following to demo hover effects.
   //&:before, &:after {
   //  visibility: hidden;

@@ -35,9 +35,9 @@ const IndexPage = () => (
             <StyledImageWrapper>
               <AstronautImage />
             </StyledImageWrapper>
-            Go to <StyledLink to="/image-stack/">image stack</StyledLink> to
-            see an example of
-            <strong> multiple stacked background images</strong>.<br/>
+            Go to <StyledLink to="/image-stack/">image stack</StyledLink> to see
+            an example of
+            <strong> multiple stacked background images</strong>.<br />
             Go to <StyledLink to="/art-direction/">art direction</StyledLink> to
             see an example of
             <strong> art-directed background images</strong>.
