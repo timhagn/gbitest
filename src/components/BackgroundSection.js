@@ -36,6 +36,7 @@ const BackgroundSection = ({ className, children }) => {
   const imageData = desktop.childImageSharp.fluid
   return (
     <StyledFullScreenWrapper>
+      <div style={{ height: 4000, display: 'block' }}></div>
       <StyledSymetryWrapper>
         <BackgroundImage
           Tag="section"
