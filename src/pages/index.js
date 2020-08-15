@@ -13,6 +13,7 @@ import {
 
 const IndexPage = () => (
   <Layout>
+    <div style={{ height: 4000, display: 'block' }}></div>
     <StyledBackgroundSection>
       <StyledWrapper>
         <StyledContentWrapperLeft>
