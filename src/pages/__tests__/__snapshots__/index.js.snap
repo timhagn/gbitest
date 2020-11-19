@@ -20,24 +20,24 @@ exports[`IndexPage renders correctly 1`] = `
       </h1>
     </div>
     <nav
-      class="sc-AxheI lkUuxj"
+      class="sc-gKsewC ldZnQy"
     >
       <a
-        class="sc-AxgMl sc-Axmtr dQejjB"
+        class="sc-jSgupP sc-iBPRYJ gmnWVn guyYKo"
         href="/"
         nav="/"
       >
         Home
       </a>
       <a
-        class="sc-AxgMl sc-Axmtr eFrCSS"
+        class="sc-jSgupP sc-iBPRYJ gmnWVn laLoyD"
         href="/image-stack/"
         nav="/image-stack/"
       >
         Image Stack
       </a>
       <a
-        class="sc-AxgMl sc-Axmtr eFrCSS"
+        class="sc-jSgupP sc-iBPRYJ gmnWVn laLoyD"
         href="/art-direction/"
         nav="/art-direction/"
       >
@@ -46,14 +46,14 @@ exports[`IndexPage renders correctly 1`] = `
     </nav>
   </header>
   <div
-    class="sc-AxirZ gweZAl"
+    class="sc-gsTCUz jedleH"
   >
     <div
-      class="sc-AxmLO diqxAj"
+      class="sc-fubCfw letjyZ"
     >
       <section
         aria-label="gbitest"
-        class="sc-fzoLsD jVfest gbi--802263448-73WakrfVbNJBaAmhQtEeDv"
+        class="sc-jrAGrp gfPKbL gbi--802263448-73WakrfVbNJBaAmhQtEeDv"
         id="gbitest"
         role="img"
         style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; opacity: 0.99;"
@@ -61,8 +61,8 @@ exports[`IndexPage renders correctly 1`] = `
       >
         <style>
           
-          .sc-fzoLsD.jVfest.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:before,
-          .sc-fzoLsD.jVfest.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:after {
+          .sc-jrAGrp.gfPKbL.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:before,
+          .sc-jrAGrp.gfPKbL.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:after {
             content: '';
             display: block;
             position: absolute;
@@ -71,19 +71,19 @@ exports[`IndexPage renders correctly 1`] = `
             top: 0;
             left: 0;
             background-color: #040e18;
-            transition: opacity 0.5s ease 0.25s;
+            transition: opacity 0.5s ease 250ms;
             background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 
           }
-          .sc-fzoLsD.jVfest.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:before {
+          .sc-jrAGrp.gfPKbL.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:before {
             z-index: -100;
             
             
-            opacity: 0; 
+            opacity: 1; 
           }
-          .sc-fzoLsD.jVfest.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:after {
+          .sc-jrAGrp.gfPKbL.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:after {
             z-index: -101;
             
             
@@ -93,10 +93,10 @@ background-size: cover;
         </style>
         <noscript />
         <div
-          class="sc-AxjAm bjGDbj"
+          class="sc-bdfBwQ hwocte"
         >
           <div
-            class="sc-AxiKw sc-AxhCb eBSZIy"
+            class="sc-dlfnbm sc-hKgILt ivkxXu dblVyR"
           >
             <div>
               <h1>
@@ -123,7 +123,7 @@ background-size: cover;
                 </code>
               </p>
               <div
-                class="sc-AxhUy iqfIsv"
+                class="sc-eCssSg kMTTKe"
               >
                 <div
                   class=" gatsby-image-wrapper"
@@ -154,7 +154,7 @@ background-size: cover;
               </div>
               Go to 
               <a
-                class="sc-AxgMl ciSOZF"
+                class="sc-jSgupP gmnWVn"
                 href="/image-stack/"
               >
                 image stack
@@ -167,7 +167,7 @@ background-size: cover;
               <br />
               Go to 
               <a
-                class="sc-AxgMl ciSOZF"
+                class="sc-jSgupP gmnWVn"
                 href="/art-direction/"
               >
                 art direction
@@ -183,10 +183,10 @@ background-size: cover;
       </section>
     </div>
     <div
-      class="sc-AxmLO diqxAj"
+      class="sc-fubCfw letjyZ"
     >
       <div
-        class="sc-fzozJi kzWUw gatsby-image-wrapper"
+        class="sc-pFZIQ NhORk gatsby-image-wrapper"
         style="position: relative; overflow: hidden;"
       >
         <div
