@@ -12,5 +12,6 @@ module.exports = {
     __PATH_PREFIX__: ``,
   },
   testURL: `http://localhost`,
+  testRunner: 'jest-circus/runner',
   setupFiles: [`<rootDir>/loadershim.js`],
 }
