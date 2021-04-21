@@ -20,24 +20,24 @@ exports[`IndexPage renders correctly 1`] = `
       </h1>
     </div>
     <nav
-      class="sc-gKsewC ldZnQy"
+      class="sc-gKckTs eHtRDR"
     >
       <a
-        class="sc-jSgupP sc-iBPRYJ gmnWVn guyYKo"
+        class="sc-jRQAMF sc-iCfLBT hxzXWd gHTxSq"
         href="/"
         nav="/"
       >
         Home
       </a>
       <a
-        class="sc-jSgupP sc-iBPRYJ gmnWVn laLoyD"
+        class="sc-jRQAMF sc-iCfLBT hxzXWd fqBzUR"
         href="/image-stack/"
         nav="/image-stack/"
       >
         Image Stack
       </a>
       <a
-        class="sc-jSgupP sc-iBPRYJ gmnWVn laLoyD"
+        class="sc-jRQAMF sc-iCfLBT hxzXWd fqBzUR"
         href="/art-direction/"
         nav="/art-direction/"
       >
@@ -46,14 +46,14 @@ exports[`IndexPage renders correctly 1`] = `
     </nav>
   </header>
   <div
-    class="sc-gsTCUz jedleH"
+    class="sc-gsDJrp cZXnVB"
   >
     <div
-      class="sc-fubCfw letjyZ"
+      class="sc-furvIG jRiipV"
     >
       <section
         aria-label="gbitest"
-        class="sc-jrAGrp gfPKbL gbi--802263448-73WakrfVbNJBaAmhQtEeDv"
+        class="sc-jrQzUz iYnEel gbi--802263448-73WakrfVbNJBaAmhQtEeDv"
         id="gbitest"
         role="img"
         style="background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; opacity: 0.99;"
@@ -61,8 +61,8 @@ exports[`IndexPage renders correctly 1`] = `
       >
         <style>
           
-          .sc-jrAGrp.gfPKbL.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:before,
-          .sc-jrAGrp.gfPKbL.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:after {
+          .sc-jrQzUz.iYnEel.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:before,
+          .sc-jrQzUz.iYnEel.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:after {
             content: '';
             display: block;
             position: absolute;
@@ -77,13 +77,13 @@ background-repeat: no-repeat;
 background-size: cover;
 
           }
-          .sc-jrAGrp.gfPKbL.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:before {
+          .sc-jrQzUz.iYnEel.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:before {
             z-index: -100;
             
             
             opacity: 1; 
           }
-          .sc-jrAGrp.gfPKbL.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:after {
+          .sc-jrQzUz.iYnEel.gbi--802263448-73WakrfVbNJBaAmhQtEeDv:after {
             z-index: -101;
             
             
@@ -92,10 +92,10 @@ background-size: cover;
         
         </style>
         <div
-          class="sc-bdfBwQ hwocte"
+          class="sc-bdvvaa kAvieW"
         >
           <div
-            class="sc-dlfnbm sc-hKgILt ivkxXu dblVyR"
+            class="sc-dkPtyc sc-hKwCoD kENjxO iBIryG"
           >
             <div>
               <h1>
@@ -122,7 +122,7 @@ background-size: cover;
                 </code>
               </p>
               <div
-                class="sc-eCssSg kMTTKe"
+                class="sc-eCImvq jUaIfT"
               >
                 <div
                   class=" gatsby-image-wrapper"
@@ -153,7 +153,7 @@ background-size: cover;
               </div>
               Go to 
               <a
-                class="sc-jSgupP gmnWVn"
+                class="sc-jRQAMF hxzXWd"
                 href="/image-stack/"
               >
                 image stack
@@ -166,7 +166,7 @@ background-size: cover;
               <br />
               Go to 
               <a
-                class="sc-jSgupP gmnWVn"
+                class="sc-jRQAMF hxzXWd"
                 href="/art-direction/"
               >
                 art direction
@@ -182,10 +182,10 @@ background-size: cover;
       </section>
     </div>
     <div
-      class="sc-fubCfw letjyZ"
+      class="sc-furvIG jRiipV"
     >
       <div
-        class="sc-pFZIQ NhORk gatsby-image-wrapper"
+        class="sc-pVTma cThlAw gatsby-image-wrapper"
         style="position: relative; overflow: hidden;"
       >
         <div
